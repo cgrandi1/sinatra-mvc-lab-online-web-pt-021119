@@ -9,12 +9,11 @@ class App < Sinatra::Base
 
   get '/piglatinize' do
 
+    @PigLatinizer = 
     erb :user_input
   end
   post '/' do
-
-    @params = params
-    binding.pry
+    
     erb :user_input
   end
 
