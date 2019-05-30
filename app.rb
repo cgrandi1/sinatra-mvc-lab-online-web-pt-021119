@@ -8,12 +8,12 @@ class App < Sinatra::Base
   end
 
   # get '/piglatinize' do
-  # 
-  #   @PigLatinizer = 
+  #
+  #   @PigLatinizer =
   #   erb :user_input
   # end
   # post '/' do
-  # 
+  #
   #   erb :user_input
   # end
 
