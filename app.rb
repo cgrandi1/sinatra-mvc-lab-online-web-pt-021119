@@ -13,7 +13,7 @@ class App < Sinatra::Base
     erb :user_input
   end
   post '/' do
-    
+
     erb :user_input
   end
 
