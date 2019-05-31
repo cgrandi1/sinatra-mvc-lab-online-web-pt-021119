@@ -8,7 +8,7 @@ class App < Sinatra::Base
   end
 
   post '/piglatinize' do
-    @variable = "Hello World"
+    @params= params
 
     erb :piglatinize
   end
