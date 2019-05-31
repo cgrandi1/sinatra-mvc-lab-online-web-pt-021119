@@ -8,9 +8,7 @@ class App < Sinatra::Base
   end
 
   post '/piglatinize' do
-    phrase = params["user_phrase"]
-    pig = PigLatinizer.new
-    @newphrase = pig.piglatinize(phrase)
+    @newphrase = PigLatinizer.new.piglatinize(params["user_phrase"])
     
     #params => {"user_phrase" => "whatever you type in in the form"}
 
