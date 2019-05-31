@@ -11,7 +11,7 @@ class App < Sinatra::Base
     phrase = params["user_phrase"]
     pig = PigLatinizer.new
     @newphrase = pig.piglatinize(phrase)
-    binding.pry
+    
     #params => {"user_phrase" => "whatever you type in in the form"}
 
     erb :piglatinize
