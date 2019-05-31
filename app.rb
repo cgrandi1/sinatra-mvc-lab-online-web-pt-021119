@@ -8,7 +8,10 @@ class App < Sinatra::Base
   end
 
   post '/piglatinize' do
-    @phrase = params["user_phrase"]
+    phrase = params["user_phrase"]
+    pig = Piglatinzer.new
+    @newphrase = pig.piglatinize(phrase)
+    binding.pry
     #params => {"user_phrase" => "whatever you type in in the form"}
 
     erb :piglatinize
