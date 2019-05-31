@@ -8,9 +8,9 @@ class App < Sinatra::Base
   end
 
   post '/piglatinize' do
+    @variable = "Hello World"
 
-    binding.pry
-    erb
+    erb :piglatinize
   end
 
 end
