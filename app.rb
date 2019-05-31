@@ -4,12 +4,13 @@ class App < Sinatra::Base
 
   get '/' do
 
-    erb :user_input
+    erb :index
   end
 
   post '/piglatinize' do
 
     binding.pry
+    erb 
   end
 
 end
